@@ -13,8 +13,7 @@ class PagesController < ApplicationController
       @numbers << rand(1..99)
     end
     index = 0
-    @lucky_numbers = @numbers[index]
-    index += 1
+    @lucky_numbers = @numbers
   end
 
   def page_visits
